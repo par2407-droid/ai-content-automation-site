@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Content Automation</title><meta name="description" content="A local-first, human-approved tool for preparing short vertical videos."><link rel="stylesheet" href="style.css"></head>
+<body><header><a class="brand" href="index.html">AI Content Automation</a><nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav></header><main>
+<h1>AI Content Automation</h1>
+<p class="muted">Public information page for the TikTok Developer app “AI Content Automation”.</p>
+<div class="note"><b>Status:</b> This app has <b>not</b> been approved by TikTok, and it does <b>not</b> currently have Content Posting API access. Approval for Direct Post is still pending. Nothing described below as TikTok posting is available until TikTok approves the app and the account owner authorizes it.</div>
+<h2>What it is</h2>
+<p>AI Content Automation is a personal, local-first tool that helps one creator prepare short vertical (9:16) videos, mainly movie-review videos, for TikTok, Instagram Reels and YouTube Shorts. The creator remains in control at every step: editing starts only when the creator presses a button, previews are reviewed by the creator, and publishing happens only after the creator approves it for a specific platform.</p>
+<h2>This website versus the application</h2>
+<ul>
+<li><b>This website</b> is a small static information site (three pages). It has no login, no backend, no cookies and no analytics, and it does not process videos or accounts.</li>
+<li><b>The application</b> runs only on the creator's own Mac (a dashboard at <code>localhost</code> and a local backend). It is not hosted online, has no public user accounts and cannot be used by the public. Its source code and files are not published here.</li>
+</ul>
+<h2>Intended TikTok integration</h2>
+<p>The intended use is the official TikTok Content Posting API with <b>Direct Post</b>, for one creator account (<b>@official_putrasabah</b>), to post that creator's own videos after the creator reviews and approves them. Planned behavior:</p>
+<ul>
+<li>The creator signs in with TikTok and authorizes the app (OAuth) for their own account.</li>
+<li>The app reads the account's posting options from TikTok and the creator chooses who can view the post and the interaction settings. There are no defaults.</li>
+<li>The creator explicitly confirms each post. Nothing is posted automatically, on a schedule, or without that confirmation.</li>
+</ul>
+<p>Until TikTok approves the app and the account owner authorizes it, the creator publishes to TikTok manually and records the result in the local app.</p>
+<h2>Implemented today and planned</h2>
+<ul>
+<li><b>Implemented in the local app:</b> editing of movie-review videos, previews and final renders; caption and metadata drafts; a manual publishing record for TikTok, Instagram Reels and YouTube Shorts; publishing to the creator's own YouTube channel after the creator confirms the channel and each upload; optional outbound status notifications (macOS pop-ups and, if the creator sets it up, a Telegram message).</li>
+<li><b>Planned, not yet working:</b> TikTok sign-in and TikTok Direct Post. The app contains an unfinished TikTok code path that has never been run against TikTok, and no TikTok authorization flow exists yet.</li>
+</ul>
+<h2>AI and external services</h2>
+<p>The app does not send videos, transcripts or captions to any external AI service. Speech recognition, caption drafting and visual matching run on the creator's own computer using locally stored models. Data goes to a platform only when the creator publishes there.</p>
+<h2>Policies</h2>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+</main><footer>AI Content Automation is an individual's personal project. This is an information site only; it has no accounts, forms, cookies or analytics. Contact: the.pawagam.official@gmail.com</footer></body></html>
